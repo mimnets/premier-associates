@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import fakeData from '../../FakeData';
 import Products from '../Products/Products';
-import {Carousel, Col, Container, Row} from  'react-bootstrap';
+import {Button, Card, Carousel, Col, Container, Nav, Row} from  'react-bootstrap';
 
 const Home = () => {
     const products = fakeData;
@@ -9,10 +9,7 @@ const Home = () => {
         <div className="home-container">
             <Container>
             <Row>
-                <Col sm={1}>
-                    {/* Empty */}
-                </Col>
-                <Col sm={10}>
+                <Col sm={12}>
 
                 <Carousel>
             <Carousel.Item>
@@ -56,10 +53,18 @@ const Home = () => {
             </Carousel>
 
                 </Col>
-                <Col sm={1}>
-                    {/* Empty */}
-                </Col>
             </Row>
+            </Container>
+    
+            <Container>
+            <Card className="text-center">
+            <Card.Body>
+                <Card.Title>BUSINESS PARTNERS</Card.Title>
+                <Card.Text>
+                With supporting text below as a natural lead-in to additional content.
+                </Card.Text>
+            </Card.Body>
+            </Card>
             </Container>
             
         <div>
